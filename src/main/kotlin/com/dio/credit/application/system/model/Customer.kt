@@ -2,13 +2,15 @@ package com.dio.credit.application.system.model
 
 import jakarta.persistence.*
 import org.jetbrains.annotations.NotNull
+import java.math.BigDecimal
 
 @Entity
 data class Customer(
 
-    @Column(nullable = false) var firtsName: String = "",
+    @Column(nullable = false) var firstName: String = "",
     @Column(nullable = false) var lastName: String ="",
     @Column(nullable = false, unique = true) val cpf: String,
+    @Column(nullable = false) var income: BigDecimal = BigDecimal.ZERO,
     @Column(nullable = false, unique = true) var email: String= "",
     @Column(nullable = false) var password: String= "",
     @Column(nullable = false) @Embedded var address: Address = Address(),
