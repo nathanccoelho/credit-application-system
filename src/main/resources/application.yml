@@ -3,6 +3,9 @@ spring:
     url: jdbc:h2:mem:credit_application_system_db
     username: coelho
     password: 1234
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
   h2:
     console:
       enabled: true
