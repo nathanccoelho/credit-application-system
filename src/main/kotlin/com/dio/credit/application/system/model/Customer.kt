@@ -6,9 +6,7 @@ data class Customer(
     val cpf: String,
     var email: String= "",
     var password: String= "",
-    var address: Address = Addess(),
+    var address: Address = Address(),
     var credits: List<Credit> = mutableListOf(),
-    val id: Long? = null,
-
-
+    val id: Long? = null
 )
