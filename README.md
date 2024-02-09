@@ -44,7 +44,7 @@
 
 <h3>Autor</h3>
 
-<a href="https://www.linkedin.com/in/nathan-ccoelho/">
+<a href="https://www.linkedin.com/in/nathan-ccoelho/" target="_blank">
  <img style="border-radius: 50%;" src="https://cdn.discordapp.com/attachments/1186811548925169805/1205634607274532884/eu.jpg?ex=65d915b9&is=65c6a0b9&hm=61f813900d14476a36c34df1ee0fedd4b31e2ad6719c9550ff7f3674e865c341&" width="100px;" alt=""/>
  <br />
  <sub><b>Nathan Coelho</b></sub></a> <a href="https://twitter.com/nathanccoelho" title="Instagram"></a>
