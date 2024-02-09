@@ -44,14 +44,14 @@
 
 <h3>Autor</h3>
 
-<a href="https://www.linkedin.com/in/nathanccoelho/">
+<a href="https://www.linkedin.com/in/nathan-ccoelho/">
  <img style="border-radius: 50%;" src="https://cdn.discordapp.com/attachments/1186811548925169805/1205634607274532884/eu.jpg?ex=65d915b9&is=65c6a0b9&hm=61f813900d14476a36c34df1ee0fedd4b31e2ad6719c9550ff7f3674e865c341&" width="100px;" alt=""/>
  <br />
  <sub><b>Nathan Coelho</b></sub></a> <a href="https://twitter.com/nathanccoelho" title="Instagram"></a>
 
-Feito com ❤️ por Nathan Coelho 👋🏽 Entre em contato!
+Feito por Nathan Coelho 👋🏽 Entre em contato!
 
-[![Linkedin Badge](https://img.shields.io/badge/-NathanCoelho-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/nathanccoelho/)](https://www.linkedin.com/in/nathanccoelho/)
+[![Linkedin Badge](https://img.shields.io/badge/-NathanCoelho-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/nathan-ccoelho/)](https://www.linkedin.com/in/nathan-ccoelho/)
 [![Gmail Badge](https://img.shields.io/badge/-nathancoelho.job@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:nathancoelho.job@gmail.com)](mailto:nathancoelho.job@gmail.com)
 <hr>
 <h3>Contribuindo</h3>
