@@ -1,5 +1,6 @@
 package com.dio.credit.application.system.service.impl
 
+import com.dio.credit.application.system.exception.BusinessException
 import com.dio.credit.application.system.model.Credit
 import com.dio.credit.application.system.repository.CreditRepository
 import com.dio.credit.application.system.service.ICreditService
@@ -24,6 +25,6 @@ class CreditService(
        val credit: Credit = this.creditRepository.findByCreditCode(creditCode) ?: throw RuntimeException("Credit code $creditCode not found")
          if(credit.customer?.id == customerId){
              return credit
-         } else throw RuntimeException("Contact admin")
+         } else throw BusinessException("Contact admin")
     }
 }
