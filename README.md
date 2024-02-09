@@ -51,7 +51,7 @@
 
 Feito com ❤️ por Nathan Coelho 👋🏽 Entre em contato!
 
-[![Linkedin Badge](https://img.shields.io/badge/-NathanCCoelho-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/cami-la/)](https://www.linkedin.com/in/nathanccoelho/)
+[![Linkedin Badge](https://img.shields.io/badge/-NathanCoelho-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/nathanccoelho/)](https://www.linkedin.com/in/nathanccoelho/)
 [![Gmail Badge](https://img.shields.io/badge/-nathancoelho.job@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:nathancoelho.job@gmail.com)](mailto:nathancoelho.job@gmail.com)
 <hr>
 <h3>Contribuindo</h3>
