@@ -2,14 +2,17 @@ package com.dio.credit.application.system.dto
 
 import com.dio.credit.application.system.model.Credit
 import com.dio.credit.application.system.model.Customer
+import jakarta.validation.constraints.Future
+import jakarta.validation.constraints.NotNull
+import jakarta.validation.constraints.Positive
 import java.math.BigDecimal
 import java.time.LocalDate
 
 data class CreditDto(
-    val creditValue: BigDecimal,
-    val dayFirstInstallment : LocalDate,
-    val numberOfInstallment : Int,
-    val customerId : Long
+    @field:NotNull (message= "Invalid credit value")val creditValue: BigDecimal,
+    @field:Future (message = "First day of installmente need ini future")val dayFirstInstallment : LocalDate,
+    @field:Positive(message = "Number need positive") val numberOfInstallment : Int,
+    @field:NotNull (message= "Invalid customerId")val customerId : Long
 )
 
 {
