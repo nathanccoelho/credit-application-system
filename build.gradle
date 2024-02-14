@@ -30,6 +30,8 @@ dependencies {
 	implementation 'org.jetbrains.kotlin:kotlin-reflect'
 	runtimeOnly 'com.h2database:h2'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation group: 'io.mockk', name: 'mockk', version: '1.13.7'
+
 }
 
 tasks.withType(KotlinCompile).configureEach {
