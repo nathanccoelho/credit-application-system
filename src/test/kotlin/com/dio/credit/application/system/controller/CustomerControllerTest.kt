@@ -1,6 +1,7 @@
 package com.dio.credit.application.system.controller
 
 import com.dio.credit.application.system.dto.CustomerDto
+import com.dio.credit.application.system.dto.CustomerUpdateDto
 import com.dio.credit.application.system.model.Address
 import com.dio.credit.application.system.model.Customer
 import com.dio.credit.application.system.repository.CustomerRepository
@@ -19,6 +20,7 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders
 import org.springframework.test.web.servlet.result.MockMvcResultHandlers
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers
 import java.math.BigDecimal
+import java.util.Random
 
 @ActiveProfiles("test")
 @SpringBootTest
@@ -137,6 +139,40 @@ class CustomerControllerTest {
 
     }
 
+    @Test
+    fun `should update a customer and return status 200`(){
+        // given
+        val customer: Customer = customerRepository.save(buildCustomerDto().toEntity())
+        val customerUpdateDto: CustomerUpdateDto = buildCustomerUpdateDto()
+        val valueAsString: String = objectMapper.writeValueAsString(customerUpdateDto)
+        // when
+        // then
+        mockMvc.perform(MockMvcRequestBuilders.patch("URL?customerId=${customer.id}")
+            .contentType(MediaType.APPLICATION_JSON)
+            .content(valueAsString))
+            .andExpect(MockMvcResultMatchers.status().isOk)
+            .andExpect(MockMvcResultMatchers.jsonPath("$.firstName").value("Nathan"))
+            .andDo(MockMvcResultHandlers.print())
+
+
+    }
+    @Test
+    fun `should not update a customer with invalid id and return status 400`(){
+        // given
+       val invalidId: Long = Random().nextLong()
+        val customerUpdateDto: CustomerUpdateDto = buildCustomerUpdateDto()
+        val valueAsString: String = objectMapper.writeValueAsString(customerUpdateDto)
+        // when
+        // then
+        mockMvc.perform(MockMvcRequestBuilders.patch("URL?customerId=$invalidId")
+            .contentType(MediaType.APPLICATION_JSON)
+            .content(valueAsString))
+            .andExpect(MockMvcResultMatchers.status().isBadRequest)
+
+    }
+
+
+
 
 
 
@@ -157,6 +193,24 @@ class CustomerControllerTest {
         firstName = firstName,
         lastName = lastName,
         cpf = cpf,
+        email = email,
+        password = password,
+        zipCode = zipCode,
+        street = street,
+        income = income,
+    )
+
+    private fun buildCustomerUpdateDto(
+        firstName: String = "Nathan",
+        lastName: String = "Coelho",
+        email: String = "nathan@gmail.com",
+        password: String = "123456789",
+        zipCode: String = "85722000",
+        street: String = "Fernando vasconcelos rossi",
+        income: BigDecimal = BigDecimal.valueOf(1000.0)
+    ) = CustomerUpdateDto(
+        firstName = firstName,
+        lastName = lastName,
         email = email,
         password = password,
         zipCode = zipCode,
